@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(red,blue,aqua,orange,purple);
+}
+
+.row {
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 50px; 
+    transform: perspective(1200px) rotateY(-35deg);
+}
+
+.box {
+    background-color: dodgerblue;
+    box-shadow: 0px 0px 30px white;
+}
